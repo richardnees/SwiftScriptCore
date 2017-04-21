@@ -19,6 +19,7 @@
 		95AA281E1DF8A34500B1D616 /* PlatformName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AA281D1DF8A34500B1D616 /* PlatformName.swift */; };
 		95AA28201DF8A73A00B1D616 /* ShellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AA281F1DF8A73A00B1D616 /* ShellTests.swift */; };
 		95AA28221DF8AD7900B1D616 /* BashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AA28211DF8AD7900B1D616 /* BashTests.swift */; };
+		95F2B4001EAA3C1A00A69230 /* XcodeEnvironment+Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F2B3FF1EAA3C1A00A69230 /* XcodeEnvironment+Key.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		95AA281D1DF8A34500B1D616 /* PlatformName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatformName.swift; sourceTree = "<group>"; };
 		95AA281F1DF8A73A00B1D616 /* ShellTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShellTests.swift; sourceTree = "<group>"; };
 		95AA28211DF8AD7900B1D616 /* BashTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BashTests.swift; sourceTree = "<group>"; };
+		95F2B3FF1EAA3C1A00A69230 /* XcodeEnvironment+Key.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XcodeEnvironment+Key.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				959FE81F1DF83ACA00D09142 /* SwiftScriptCore.h */,
 				959FE8201DF83ACA00D09142 /* Info.plist */,
 				959FE8381DF83ECC00D09142 /* XcodeEnvironment.swift */,
+				95F2B3FF1EAA3C1A00A69230 /* XcodeEnvironment+Key.swift */,
 				959FE83A1DF83F4A00D09142 /* XcodeLogger.swift */,
 				95404FE91DF8781700CFF61C /* Bash.swift */,
 				95AA28191DF8A29C00B1D616 /* Shell.swift */,
@@ -226,6 +229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95F2B4001EAA3C1A00A69230 /* XcodeEnvironment+Key.swift in Sources */,
 				95404FEA1DF8781700CFF61C /* Bash.swift in Sources */,
 				959FE8391DF83ECC00D09142 /* XcodeEnvironment.swift in Sources */,
 				95AA281A1DF8A29C00B1D616 /* Shell.swift in Sources */,
