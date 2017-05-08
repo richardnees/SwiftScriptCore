@@ -70,6 +70,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		79808B781EC10C64006D3EC6 /* Xcode */ = {
+			isa = PBXGroup;
+			children = (
+				959FE8381DF83ECC00D09142 /* XcodeEnvironment.swift */,
+				95F2B3FF1EAA3C1A00A69230 /* XcodeEnvironment+Key.swift */,
+				959FE83A1DF83F4A00D09142 /* XcodeLogger.swift */,
+			);
+			name = Xcode;
+			sourceTree = "<group>";
+		};
 		959FE8121DF83ACA00D09142 = {
 			isa = PBXGroup;
 			children = (
@@ -93,13 +103,11 @@
 			children = (
 				959FE81F1DF83ACA00D09142 /* SwiftScriptCore.h */,
 				959FE8201DF83ACA00D09142 /* Info.plist */,
-				959FE8381DF83ECC00D09142 /* XcodeEnvironment.swift */,
-				95F2B3FF1EAA3C1A00A69230 /* XcodeEnvironment+Key.swift */,
-				959FE83A1DF83F4A00D09142 /* XcodeLogger.swift */,
 				95404FE91DF8781700CFF61C /* Bash.swift */,
 				95AA28191DF8A29C00B1D616 /* Shell.swift */,
 				95AA281B1DF8A32D00B1D616 /* Architecture.swift */,
 				95AA281D1DF8A34500B1D616 /* PlatformName.swift */,
+				79808B781EC10C64006D3EC6 /* Xcode */,
 			);
 			path = SwiftScriptCore;
 			sourceTree = "<group>";

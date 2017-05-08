@@ -21,6 +21,15 @@ public class XcodeEnvironment {
     public static func environmentVariable(for key: XcodeEnvironment.Key) -> String? {
         return XcodeEnvironment.environmentVariable(for: key.rawValue)
     }
+}
+
+// MARK: - Build Settings Convenience
+
+extension XcodeEnvironment {
+
+    public static var configurationName: String? {
+        return XcodeEnvironment.environmentVariable(for: .configurationName)
+    }
     
     public static var targetName: String? {
         return XcodeEnvironment.environmentVariable(for: .targetName)
