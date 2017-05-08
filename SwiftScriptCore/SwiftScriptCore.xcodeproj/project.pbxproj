@@ -6,7 +6,22 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		79808BA51EC111DF006D3EC6 /* ScriptRunner */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 79808BA61EC111DF006D3EC6 /* Build configuration list for PBXAggregateTarget "ScriptRunner" */;
+			buildPhases = (
+				79808BAA1EC111EF006D3EC6 /* Platform and Configuration */,
+			);
+			dependencies = (
+			);
+			name = ScriptRunner;
+			productName = ScriptRunner;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
+		79808BAD1EC1164A006D3EC6 /* Git.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79808BAC1EC1164A006D3EC6 /* Git.swift */; };
 		95404FEA1DF8781700CFF61C /* Bash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95404FE91DF8781700CFF61C /* Bash.swift */; };
 		959FE8261DF83ACA00D09142 /* SwiftScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 959FE81C1DF83ACA00D09142 /* SwiftScriptCore.framework */; };
 		959FE82D1DF83ACA00D09142 /* SwiftScriptCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 959FE81F1DF83ACA00D09142 /* SwiftScriptCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -33,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		79808BAB1EC1122E006D3EC6 /* Scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Scripts; sourceTree = "<group>"; };
+		79808BAC1EC1164A006D3EC6 /* Git.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Git.swift; sourceTree = "<group>"; };
 		95404FE91DF8781700CFF61C /* Bash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bash.swift; sourceTree = "<group>"; };
 		959FE81C1DF83ACA00D09142 /* SwiftScriptCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftScriptCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		959FE81F1DF83ACA00D09142 /* SwiftScriptCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftScriptCore.h; sourceTree = "<group>"; };
@@ -83,6 +100,7 @@
 		959FE8121DF83ACA00D09142 = {
 			isa = PBXGroup;
 			children = (
+				79808BAB1EC1122E006D3EC6 /* Scripts */,
 				959FE81E1DF83ACA00D09142 /* SwiftScriptCore */,
 				959FE8291DF83ACA00D09142 /* SwiftScriptCoreTests */,
 				959FE81D1DF83ACA00D09142 /* Products */,
@@ -103,8 +121,9 @@
 			children = (
 				959FE81F1DF83ACA00D09142 /* SwiftScriptCore.h */,
 				959FE8201DF83ACA00D09142 /* Info.plist */,
-				95404FE91DF8781700CFF61C /* Bash.swift */,
 				95AA28191DF8A29C00B1D616 /* Shell.swift */,
+				95404FE91DF8781700CFF61C /* Bash.swift */,
+				79808BAC1EC1164A006D3EC6 /* Git.swift */,
 				95AA281B1DF8A32D00B1D616 /* Architecture.swift */,
 				95AA281D1DF8A34500B1D616 /* PlatformName.swift */,
 				79808B781EC10C64006D3EC6 /* Xcode */,
@@ -184,6 +203,11 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Richard Nees";
 				TargetAttributes = {
+					79808BA51EC111DF006D3EC6 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = S6PH7FUNVK;
+						ProvisioningStyle = Automatic;
+					};
 					959FE81B1DF83ACA00D09142 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = S6PH7FUNVK;
@@ -211,6 +235,7 @@
 			targets = (
 				959FE81B1DF83ACA00D09142 /* SwiftScriptCore */,
 				959FE8241DF83ACA00D09142 /* SwiftScriptCoreTests */,
+				79808BA51EC111DF006D3EC6 /* ScriptRunner */,
 			);
 		};
 /* End PBXProject section */
@@ -232,11 +257,29 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		79808BAA1EC111EF006D3EC6 /* Platform and Configuration */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Platform and Configuration";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/bin/env xcrun --toolchain com.apple.dt.toolchain.Default --sdk macosx swift -target x86_64-apple-macosx10.12 -F \"${BUILT_PRODUCTS_DIR}\" \"${SRCROOT}/Scripts/Configuration.swift\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		959FE8171DF83ACA00D09142 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79808BAD1EC1164A006D3EC6 /* Git.swift in Sources */,
 				95F2B4001EAA3C1A00A69230 /* XcodeEnvironment+Key.swift in Sources */,
 				95404FEA1DF8781700CFF61C /* Bash.swift in Sources */,
 				959FE8391DF83ECC00D09142 /* XcodeEnvironment.swift in Sources */,
@@ -269,6 +312,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		79808BA71EC111DF006D3EC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = S6PH7FUNVK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		79808BA81EC111DF006D3EC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = S6PH7FUNVK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		959FE82E1DF83ACA00D09142 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -311,6 +370,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = SwiftScriptCore/Info.plist;
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -358,6 +418,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = SwiftScriptCore/Info.plist;
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
@@ -380,7 +441,6 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = SwiftScriptCore/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.richardnees.SwiftScriptCore;
@@ -404,7 +464,6 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = SwiftScriptCore/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.richardnees.SwiftScriptCore;
@@ -445,6 +504,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		79808BA61EC111DF006D3EC6 /* Build configuration list for PBXAggregateTarget "ScriptRunner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79808BA71EC111DF006D3EC6 /* Debug */,
+				79808BA81EC111DF006D3EC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		959FE8161DF83ACA00D09142 /* Build configuration list for PBXProject "SwiftScriptCore" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

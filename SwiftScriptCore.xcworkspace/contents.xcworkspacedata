@@ -7,7 +7,4 @@
    <FileRef
       location = "group:SwiftScriptCore/SwiftScriptCore.xcodeproj">
    </FileRef>
-   <FileRef
-      location = "group:/Users/richard/Github/SwiftScriptCore/Example/Example Scripts.xcodeproj">
-   </FileRef>
 </Workspace>
