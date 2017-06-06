@@ -2,9 +2,13 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:SwiftScriptCore.playground">
-   </FileRef>
-   <FileRef
       location = "group:SwiftScriptCore/SwiftScriptCore.xcodeproj">
    </FileRef>
+   <Group
+      location = "container:"
+      name = "Playgrounds">
+      <FileRef
+         location = "group:SwiftScriptCore.playground">
+      </FileRef>
+   </Group>
 </Workspace>
