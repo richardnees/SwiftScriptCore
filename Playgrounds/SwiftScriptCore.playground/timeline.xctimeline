@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Timeline
+   version = "3.0">
+   <TimelineItems>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/richard/Github/SwiftScriptCore/Playgrounds/SwiftScriptCore.playground#CharacterRangeLen=20&amp;CharacterRangeLoc=75&amp;EndingColumnNumber=25&amp;EndingLineNumber=5&amp;StartingColumnNumber=5&amp;StartingLineNumber=5&amp;Timestamp=529339323.427479"
+         lockedSize = "{1095, 299}"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/richard/Github/SwiftScriptCore/Playgrounds/SwiftScriptCore.playground#CharacterRangeLen=16&amp;CharacterRangeLoc=362&amp;EndingColumnNumber=24&amp;EndingLineNumber=16&amp;StartingColumnNumber=8&amp;StartingLineNumber=16&amp;Timestamp=529339323.427598"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/richard/Github/SwiftScriptCore/Playgrounds/SwiftScriptCore.playground#CharacterRangeLen=20&amp;CharacterRangeLoc=293&amp;EndingColumnNumber=25&amp;EndingLineNumber=10&amp;StartingColumnNumber=5&amp;StartingLineNumber=10&amp;Timestamp=529339323.427685"
+         lockedSize = "{1054, 183}"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/richard/Github/SwiftScriptCore/Playgrounds/SwiftScriptCore.playground#CharacterRangeLen=16&amp;CharacterRangeLoc=359&amp;EndingColumnNumber=21&amp;EndingLineNumber=16&amp;StartingColumnNumber=5&amp;StartingLineNumber=16&amp;Timestamp=529339323.427769"
+         lockedSize = "{707.279296875, 173}"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+   </TimelineItems>
+</Timeline>

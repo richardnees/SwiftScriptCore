@@ -13,7 +13,8 @@ public class Shell {
         let data = pipe.fileHandleForReading.readDataToEndOfFile()
         if let output = String(data: data, encoding: .utf8) {
             if output.isEmpty == false {
-                return output.substring(to: output.index(output.endIndex, offsetBy: -1))
+                let subString = String(output[output.startIndex..<output.index(output.endIndex, offsetBy: -1)])
+                return subString
             }
             return output
         }

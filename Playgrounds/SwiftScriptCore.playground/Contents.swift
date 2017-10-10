@@ -1,15 +1,18 @@
-//: Playground - noun: a place where people can play
-
 import Cocoa
 import SwiftScriptCore
 
+//: Xcode Environment Variables
+
 let environmentVariables = XcodeEnvironment.environmentVariables
 
+//: Framework Search Paths
+
 if let frameworkSearchPaths = XcodeEnvironment.environmentVariable(for: .dyldFrameworkPath)?.components(separatedBy: ":") {
-    frameworkSearchPaths.forEach {
-        print($0)
+    frameworkSearchPaths.forEach { _ in
     }
 }
 
-let directoryContent = Bash.run(command: "/bin/ls", arguments: ["-la"])
-print(directoryContent)
+//: Run /bin/ls
+
+let directoryContent = Bash.run(command: "/bin/ls", arguments: ["-la", "/Applications"])
+
