@@ -32,10 +32,11 @@ class ConfigurationTool {
             XcodeLogger.output(message: "Missing infoPlistURL", type: .error, indentation: 1)
         }
         
+        let git = Git(gitDirectoryPath: XcodeEnvironment.sourceRootURL!.path)
         XcodeLogger.output(message: "Git:", type: .note)
-        XcodeLogger.output(message: "Branch:\t\t\(Git.currentBranch)", type: .note, indentation: 1)
-        XcodeLogger.output(message: "Hash:\t\t\(Git.currentCommitHash)", type: .note, indentation: 1)
-        XcodeLogger.output(message: "Count:\t\t\(Git.commitCount)", type: .note, indentation: 1)
+        XcodeLogger.output(message: "Branch:\t\t\(git.currentBranch)", type: .note, indentation: 1)
+        XcodeLogger.output(message: "Hash:\t\t\(git.currentCommitHash)", type: .note, indentation: 1)
+        XcodeLogger.output(message: "Count:\t\t\(git.commitCount)", type: .note, indentation: 1)
 
 //        XcodeLogger.output(message: "Here is a warning!", type: .warning)
 //        XcodeLogger.output(message: "Here is an error!", type: .error)
