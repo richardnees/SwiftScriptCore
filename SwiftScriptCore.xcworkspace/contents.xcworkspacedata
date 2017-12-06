@@ -1,7 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
+   <Group
+      location = "container:"
+      name = "Carthage">
+      <FileRef
+         location = "group:Cartfile">
+      </FileRef>
+   </Group>
+   <Group
+      location = "group:Configuration"
+      name = "Configuration">
+      <FileRef
+         location = "group:Frameworks.xcconfig">
+      </FileRef>
+      <FileRef
+         location = "group:XPC.xcconfig">
+      </FileRef>
+      <FileRef
+         location = "group:Clang.xcconfig">
+      </FileRef>
+      <FileRef
+         location = "group:Shared.xcconfig">
+      </FileRef>
+      <FileRef
+         location = "group:Cocoa.xcconfig">
+      </FileRef>
+      <FileRef
+         location = "group:Version.xcconfig">
+      </FileRef>
+      <FileRef
+         location = "group:GCC.xcconfig">
+      </FileRef>
+      <FileRef
+         location = "group:Plugins.xcconfig">
+      </FileRef>
+      <FileRef
+         location = "group:Applications.xcconfig">
+      </FileRef>
+   </Group>
    <FileRef
-      location = "group:SwiftScriptCore/SwiftScriptCore.xcodeproj">
+      location = "group:Frameworks/SwiftScriptCore/SwiftScriptCore.xcodeproj">
    </FileRef>
 </Workspace>

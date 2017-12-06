@@ -1,0 +1,11 @@
+#include "../../Configuration/Frameworks.xcconfig"
+
+ONLY_ACTIVE_ARCH = NO
+
+ENABLE_NS_ASSERTIONS = NO
+
+DEBUG_INFORMATION_FORMAT = dwarf-with-dsym
+
+MTL_ENABLE_DEBUG_INFO = NO
+
+SWIFT_OPTIMIZATION_LEVEL = -Owholemodule

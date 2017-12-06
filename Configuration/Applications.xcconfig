@@ -1,0 +1,4 @@
+#include "Shared.xcconfig"
+
+ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
+

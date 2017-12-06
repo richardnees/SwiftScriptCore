@@ -2,6 +2,7 @@
 
 import Foundation
 import SwiftScriptCore
+import Bash
 
 class ConfigurationTool {
     
