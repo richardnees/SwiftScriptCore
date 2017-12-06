@@ -21,9 +21,6 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		793700901FD7DCC800094952 /* SwiftScriptCore.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 7937008D1FD7DCC800094952 /* SwiftScriptCore.xcconfig */; };
-		793700911FD7DCC800094952 /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 7937008E1FD7DCC800094952 /* Debug.xcconfig */; };
-		793700921FD7DCC800094952 /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 7937008F1FD7DCC800094952 /* Release.xcconfig */; };
 		793700941FD7DDDF00094952 /* Bash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 793700931FD7DDDF00094952 /* Bash.framework */; };
 		79808BAD1EC1164A006D3EC6 /* Git.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79808BAC1EC1164A006D3EC6 /* Git.swift */; };
 		959FE8261DF83ACA00D09142 /* SwiftScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 959FE81C1DF83ACA00D09142 /* SwiftScriptCore.framework */; };
@@ -219,7 +216,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Richard Nees";
 				TargetAttributes = {
 					79808BA51EC111DF006D3EC6 = {
@@ -266,9 +263,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				793700911FD7DCC800094952 /* Debug.xcconfig in Resources */,
-				793700901FD7DCC800094952 /* SwiftScriptCore.xcconfig in Resources */,
-				793700921FD7DCC800094952 /* Release.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
