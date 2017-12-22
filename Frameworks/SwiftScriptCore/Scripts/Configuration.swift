@@ -7,39 +7,39 @@ import Bash
 class ConfigurationTool {
     
     func run() {
-        XcodeLogger.output(message: "Detected platform:", type: .note)
-        XcodeLogger.output(message: XcodeEnvironment.platformName.rawValue, type: .note, indentation: 1)
-        XcodeLogger.output(message: "Detected configuration:", type: .note)
+        XcodeLog.output(message: "Detected platform:", type: .note)
+        XcodeLog.output(message: XcodeEnv.platformName.rawValue, type: .note, indentation: 1)
+        XcodeLog.output(message: "Detected configuration:", type: .note)
 
-        if let configurationName = XcodeEnvironment.configurationName {
-            XcodeLogger.output(message: configurationName, type: .note, indentation: 1)
+        if let configurationName = XcodeEnv.configurationName {
+            XcodeLog.output(message: configurationName, type: .note, indentation: 1)
         } else {
-            XcodeLogger.output(message: "Missing configuration", type: .error, indentation: 1)
+            XcodeLog.output(message: "Missing configuration", type: .error, indentation: 1)
         }
 
-        if let infoPlistURL = XcodeEnvironment.infoPlistURL {
-            XcodeLogger.output(message: infoPlistURL.path, type: .note, indentation: 1)
+        if let infoPlistURL = XcodeEnv.infoPlistURL {
+            XcodeLog.output(message: infoPlistURL.path, type: .note, indentation: 1)
             
             if let infoPlist = NSDictionary(contentsOf: infoPlistURL) {
-                XcodeLogger.output(message: "Info Plist:", type: .note)
+                XcodeLog.output(message: "Info Plist:", type: .note)
                 
                 for (key, value) in infoPlist {
-                    XcodeLogger.output(message: String(describing: key), type: .note, indentation: 1)
-                    XcodeLogger.output(message: String(describing: value), type: .note, indentation: 2)
+                    XcodeLog.output(message: String(describing: key), type: .note, indentation: 1)
+                    XcodeLog.output(message: String(describing: value), type: .note, indentation: 2)
                 }
             }
         } else {
-            XcodeLogger.output(message: "Missing infoPlistURL", type: .error, indentation: 1)
+            XcodeLog.output(message: "Missing infoPlistURL", type: .error, indentation: 1)
         }
         
-        let git = Git(gitDirectoryPath: XcodeEnvironment.sourceRootURL!.path)
-        XcodeLogger.output(message: "Git:", type: .note)
-        XcodeLogger.output(message: "Branch:\t\t\(git.currentBranch)", type: .note, indentation: 1)
-        XcodeLogger.output(message: "Hash:\t\t\(git.currentCommitHash)", type: .note, indentation: 1)
-        XcodeLogger.output(message: "Count:\t\t\(git.commitCount)", type: .note, indentation: 1)
+        let git = Git(gitDirectoryPath: XcodeEnv.sourceRootURL!.path)
+        XcodeLog.output(message: "Git:", type: .note)
+        XcodeLog.output(message: "Branch:\t\t\(git.currentBranch)", type: .note, indentation: 1)
+        XcodeLog.output(message: "Hash:\t\t\(git.currentCommitHash)", type: .note, indentation: 1)
+        XcodeLog.output(message: "Count:\t\t\(git.commitCount)", type: .note, indentation: 1)
 
-//        XcodeLogger.output(message: "Here is a warning!", type: .warning)
-//        XcodeLogger.output(message: "Here is an error!", type: .error)
+//        XcodeLog.output(message: "Here is a warning!", type: .warning)
+//        XcodeLog.output(message: "Here is an error!", type: .error)
 
     }
 }

@@ -21,11 +21,11 @@ ENABLE_TESTABILITY = YES
 
 FRAMEWORK_SEARCH_PATHS = $(inherited) $(PROJECT_DIR)/../../Carthage/Build/Mac
 
-INFOPLIST_FILE = Source/Info.plist
+INFOPLIST_FILE = Sources/Info.plist
 
 LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/../Frameworks @loader_path/Frameworks
 
-MACOSX_DEPLOYMENT_TARGET = 10.12
+MACOSX_DEPLOYMENT_TARGET = 10.13
 
 MTL_ENABLE_DEBUG_INFO = YES
 

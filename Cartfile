@@ -1,5 +1,5 @@
 # Run the following command when making changes:
 # TOOLCHAINS=com.apple.dt.toolchain.Default carthage update Bash --platform macOS
 
-github "richardnees/Bash" == 0.1
+github "richardnees/Bash" == 0.2.0
 

@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Bash",
+        "repositoryURL": "https://github.com/richardnees/Bash.git",
+        "state": {
+          "branch": null,
+          "revision": "0520d57ccde3d19e943fa0af85967512b9cb65ce",
+          "version": "0.2.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

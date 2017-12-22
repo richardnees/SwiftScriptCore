@@ -1,7 +1,7 @@
 import XCTest
 @testable import SwiftScriptCore
 
-class XcodeLoggerTests: XCTestCase {
+class XcodeLogTests: XCTestCase {
 
     override func setUp() {
         super.setUp()
@@ -12,14 +12,14 @@ class XcodeLoggerTests: XCTestCase {
     }
     
     func test_outputNoteNoIdentation() {
-        XcodeLogger.output(message: "Not - No Indentation", type: .note)
+        XcodeLog.output(message: "Not - No Indentation", type: .note)
     }
     
     func test_outputNoteDoubleIdentation() {
-        XcodeLogger.output(message: "Note - Double Indentation", type: .note, indentation: 2)
+        XcodeLog.output(message: "Note - Double Indentation", type: .note, indentation: 2)
     }
     
     func test_outputError() {
-        XcodeLogger.output(message: "Error", type: .error)
+        XcodeLog.output(message: "Error", type: .error)
     }
 }

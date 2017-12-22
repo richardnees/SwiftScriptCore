@@ -21,17 +21,18 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		793700941FD7DDDF00094952 /* Bash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 793700931FD7DDDF00094952 /* Bash.framework */; };
+		792E667E1FEDB05B0030FFEE /* Bash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792E667D1FEDB05B0030FFEE /* Bash.framework */; };
+		792E667F1FEDB2AB0030FFEE /* Bash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792E667D1FEDB05B0030FFEE /* Bash.framework */; };
 		79808BAD1EC1164A006D3EC6 /* Git.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79808BAC1EC1164A006D3EC6 /* Git.swift */; };
 		959FE8261DF83ACA00D09142 /* SwiftScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 959FE81C1DF83ACA00D09142 /* SwiftScriptCore.framework */; };
 		959FE82D1DF83ACA00D09142 /* SwiftScriptCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 959FE81F1DF83ACA00D09142 /* SwiftScriptCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		959FE8391DF83ECC00D09142 /* XcodeEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959FE8381DF83ECC00D09142 /* XcodeEnvironment.swift */; };
-		959FE83B1DF83F4A00D09142 /* XcodeLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959FE83A1DF83F4A00D09142 /* XcodeLogger.swift */; };
+		959FE8391DF83ECC00D09142 /* XcodeEnv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959FE8381DF83ECC00D09142 /* XcodeEnv.swift */; };
+		959FE83B1DF83F4A00D09142 /* XcodeLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959FE83A1DF83F4A00D09142 /* XcodeLog.swift */; };
 		959FE83E1DF84AA200D09142 /* XcodeEnvironmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959FE83D1DF84AA200D09142 /* XcodeEnvironmentTests.swift */; };
 		959FE8401DF84CFD00D09142 /* XcodeLoggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959FE83F1DF84CFD00D09142 /* XcodeLoggerTests.swift */; };
 		95AA281C1DF8A32D00B1D616 /* Architecture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AA281B1DF8A32D00B1D616 /* Architecture.swift */; };
 		95AA281E1DF8A34500B1D616 /* PlatformName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AA281D1DF8A34500B1D616 /* PlatformName.swift */; };
-		95F2B4001EAA3C1A00A69230 /* XcodeEnvironment+Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F2B3FF1EAA3C1A00A69230 /* XcodeEnvironment+Key.swift */; };
+		95F2B4001EAA3C1A00A69230 /* XcodeEnv+Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F2B3FF1EAA3C1A00A69230 /* XcodeEnv+Key.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,10 +46,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		792E667D1FEDB05B0030FFEE /* Bash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bash.framework; path = ../../Carthage/Build/Mac/Bash.framework; sourceTree = "<group>"; };
+		792E66801FEDB3140030FFEE /* SwiftScriptCoreTests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SwiftScriptCoreTests.xcconfig; sourceTree = "<group>"; };
 		7937008D1FD7DCC800094952 /* SwiftScriptCore.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = SwiftScriptCore.xcconfig; sourceTree = "<group>"; };
 		7937008E1FD7DCC800094952 /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		7937008F1FD7DCC800094952 /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
-		793700931FD7DDDF00094952 /* Bash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bash.framework; path = ../../Carthage/Build/Mac/Bash.framework; sourceTree = SOURCE_ROOT; };
 		795275B31F8D12DB0099D2EC /* SwiftScriptCore.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = SwiftScriptCore.playground; path = ../../../Playgrounds/SwiftScriptCore.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		79808BAB1EC1122E006D3EC6 /* Scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Scripts; sourceTree = "<group>"; };
 		79808BAC1EC1164A006D3EC6 /* Git.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Git.swift; sourceTree = "<group>"; };
@@ -57,13 +59,13 @@
 		959FE8201DF83ACA00D09142 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		959FE8251DF83ACA00D09142 /* SwiftScriptCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftScriptCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		959FE82C1DF83ACA00D09142 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		959FE8381DF83ECC00D09142 /* XcodeEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XcodeEnvironment.swift; sourceTree = "<group>"; };
-		959FE83A1DF83F4A00D09142 /* XcodeLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XcodeLogger.swift; sourceTree = "<group>"; };
+		959FE8381DF83ECC00D09142 /* XcodeEnv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XcodeEnv.swift; sourceTree = "<group>"; };
+		959FE83A1DF83F4A00D09142 /* XcodeLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XcodeLog.swift; sourceTree = "<group>"; };
 		959FE83D1DF84AA200D09142 /* XcodeEnvironmentTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XcodeEnvironmentTests.swift; sourceTree = "<group>"; };
 		959FE83F1DF84CFD00D09142 /* XcodeLoggerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XcodeLoggerTests.swift; sourceTree = "<group>"; };
 		95AA281B1DF8A32D00B1D616 /* Architecture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Architecture.swift; sourceTree = "<group>"; };
 		95AA281D1DF8A34500B1D616 /* PlatformName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatformName.swift; sourceTree = "<group>"; };
-		95F2B3FF1EAA3C1A00A69230 /* XcodeEnvironment+Key.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XcodeEnvironment+Key.swift"; sourceTree = "<group>"; };
+		95F2B3FF1EAA3C1A00A69230 /* XcodeEnv+Key.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XcodeEnv+Key.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				793700941FD7DDDF00094952 /* Bash.framework in Frameworks */,
+				792E667E1FEDB05B0030FFEE /* Bash.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				792E667F1FEDB2AB0030FFEE /* Bash.framework in Frameworks */,
 				959FE8261DF83ACA00D09142 /* SwiftScriptCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -86,12 +89,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		792E667C1FEDB05B0030FFEE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				792E667D1FEDB05B0030FFEE /* Bash.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7937008C1FD7DCC800094952 /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
 				7937008D1FD7DCC800094952 /* SwiftScriptCore.xcconfig */,
 				7937008E1FD7DCC800094952 /* Debug.xcconfig */,
 				7937008F1FD7DCC800094952 /* Release.xcconfig */,
+				792E66801FEDB3140030FFEE /* SwiftScriptCoreTests.xcconfig */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -107,9 +119,9 @@
 		79808B781EC10C64006D3EC6 /* Xcode */ = {
 			isa = PBXGroup;
 			children = (
-				959FE8381DF83ECC00D09142 /* XcodeEnvironment.swift */,
-				95F2B3FF1EAA3C1A00A69230 /* XcodeEnvironment+Key.swift */,
-				959FE83A1DF83F4A00D09142 /* XcodeLogger.swift */,
+				959FE8381DF83ECC00D09142 /* XcodeEnv.swift */,
+				95F2B3FF1EAA3C1A00A69230 /* XcodeEnv+Key.swift */,
+				959FE83A1DF83F4A00D09142 /* XcodeLog.swift */,
 			);
 			name = Xcode;
 			sourceTree = "<group>";
@@ -120,10 +132,10 @@
 				7937008C1FD7DCC800094952 /* Configuration */,
 				795275B21F8D12CF0099D2EC /* Playgrounds */,
 				79808BAB1EC1122E006D3EC6 /* Scripts */,
-				959FE81E1DF83ACA00D09142 /* Source */,
-				793700931FD7DDDF00094952 /* Bash.framework */,
+				959FE81E1DF83ACA00D09142 /* Sources */,
 				959FE8291DF83ACA00D09142 /* SwiftScriptCoreTests */,
 				959FE81D1DF83ACA00D09142 /* Products */,
+				792E667C1FEDB05B0030FFEE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,7 +148,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		959FE81E1DF83ACA00D09142 /* Source */ = {
+		959FE81E1DF83ACA00D09142 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				959FE81F1DF83ACA00D09142 /* SwiftScriptCore.h */,
@@ -146,7 +158,7 @@
 				95AA281D1DF8A34500B1D616 /* PlatformName.swift */,
 				79808B781EC10C64006D3EC6 /* Xcode */,
 			);
-			path = Source;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		959FE8291DF83ACA00D09142 /* SwiftScriptCoreTests */ = {
@@ -288,7 +300,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/bin/env xcrun --toolchain com.apple.dt.toolchain.Default --sdk macosx swift -target x86_64-apple-macosx10.12 -F \"${BUILT_PRODUCTS_DIR}\" \"${SRCROOT}/Scripts/Configuration.swift\"\n";
+			shellScript = "/usr/bin/env xcrun --toolchain com.apple.dt.toolchain.Default --sdk macosx swift -target x86_64-apple-macosx10.13 -F \"${BUILT_PRODUCTS_DIR}\" \"${SRCROOT}/Scripts/Configuration.swift\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -298,9 +310,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				79808BAD1EC1164A006D3EC6 /* Git.swift in Sources */,
-				95F2B4001EAA3C1A00A69230 /* XcodeEnvironment+Key.swift in Sources */,
-				959FE8391DF83ECC00D09142 /* XcodeEnvironment.swift in Sources */,
-				959FE83B1DF83F4A00D09142 /* XcodeLogger.swift in Sources */,
+				95F2B4001EAA3C1A00A69230 /* XcodeEnv+Key.swift in Sources */,
+				959FE8391DF83ECC00D09142 /* XcodeEnv.swift in Sources */,
+				959FE83B1DF83F4A00D09142 /* XcodeLog.swift in Sources */,
 				95AA281C1DF8A32D00B1D616 /* Architecture.swift in Sources */,
 				95AA281E1DF8A34500B1D616 /* PlatformName.swift in Sources */,
 			);
@@ -374,6 +386,7 @@
 		};
 		959FE8341DF83ACA00D09142 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 792E66801FEDB3140030FFEE /* SwiftScriptCoreTests.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -387,6 +400,7 @@
 		};
 		959FE8351DF83ACA00D09142 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 792E66801FEDB3140030FFEE /* SwiftScriptCoreTests.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;

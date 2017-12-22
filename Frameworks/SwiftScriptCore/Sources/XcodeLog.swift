@@ -1,6 +1,6 @@
 import Foundation
 
-public class XcodeLogger {
+public class XcodeLog {
     
     public enum OutputType: String {
         case note
@@ -19,7 +19,7 @@ public class XcodeLogger {
         
         if type == .error {
             // Exit if we aren't running unit tests
-            guard let _ = XcodeEnvironment.environmentVariables.filter({ $0.0 == "XCTestConfigurationFilePath" }).map({ $0.1 }).first else {
+            guard let _ = XcodeEnv.environmentVariables.filter({ $0.0 == "XCTestConfigurationFilePath" }).map({ $0.1 }).first else {
                 exit(1)
             }
         }

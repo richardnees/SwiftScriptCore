@@ -3,6 +3,16 @@
    version = "1.0">
    <Group
       location = "container:"
+      name = "Package">
+      <FileRef
+         location = "group:Package.swift">
+      </FileRef>
+      <FileRef
+         location = "group:ReadMe.md">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:"
       name = "Carthage">
       <FileRef
          location = "group:Cartfile">
