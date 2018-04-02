@@ -51,7 +51,6 @@
 		7937008D1FD7DCC800094952 /* SwiftScriptCore.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = SwiftScriptCore.xcconfig; sourceTree = "<group>"; };
 		7937008E1FD7DCC800094952 /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		7937008F1FD7DCC800094952 /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
-		795275B31F8D12DB0099D2EC /* SwiftScriptCore.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = SwiftScriptCore.playground; path = ../../../Playgrounds/SwiftScriptCore.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		79808BAB1EC1122E006D3EC6 /* Scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Scripts; sourceTree = "<group>"; };
 		79808BAC1EC1164A006D3EC6 /* Git.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Git.swift; sourceTree = "<group>"; };
 		959FE81C1DF83ACA00D09142 /* SwiftScriptCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftScriptCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,14 +107,6 @@
 			path = Configuration;
 			sourceTree = "<group>";
 		};
-		795275B21F8D12CF0099D2EC /* Playgrounds */ = {
-			isa = PBXGroup;
-			children = (
-				795275B31F8D12DB0099D2EC /* SwiftScriptCore.playground */,
-			);
-			path = Playgrounds;
-			sourceTree = "<group>";
-		};
 		79808B781EC10C64006D3EC6 /* Xcode */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,7 +121,6 @@
 			isa = PBXGroup;
 			children = (
 				7937008C1FD7DCC800094952 /* Configuration */,
-				795275B21F8D12CF0099D2EC /* Playgrounds */,
 				79808BAB1EC1122E006D3EC6 /* Scripts */,
 				959FE81E1DF83ACA00D09142 /* Sources */,
 				959FE8291DF83ACA00D09142 /* SwiftScriptCoreTests */,
