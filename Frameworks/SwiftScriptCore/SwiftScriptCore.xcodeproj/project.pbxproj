@@ -230,13 +230,13 @@
 					959FE81B1DF83ACA00D09142 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = S6PH7FUNVK;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = "";
 						ProvisioningStyle = Manual;
 					};
 					959FE8241DF83ACA00D09142 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = S6PH7FUNVK;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = "";
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -385,6 +385,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.richardnees.SwiftScriptCoreTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -399,6 +400,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.richardnees.SwiftScriptCoreTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
